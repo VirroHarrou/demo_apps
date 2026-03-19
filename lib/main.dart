@@ -1,4 +1,4 @@
-import 'package:demo_apps/ball_game_screen.dart';
+import 'package:demo_apps/pages/ball_game_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,9 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const BallGameScreen(),
+      theme: ThemeData.dark(),
+      home: const BallGamePage(),
     );
   }
 }
